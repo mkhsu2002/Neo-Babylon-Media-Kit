@@ -30,7 +30,7 @@
 | `characters.md` | 角色列表（含中／英／日譯名、出處、描述、參考圖連結） |
 | `scenes.md` | 場景列表（同上） |
 | `mecha.md` | 機甲列表（含中／英／日譯名、出處、描述、參考圖連結） |
-| `index.html` | 網頁瀏覽器：搜尋、分類瀏覽、放大檢視、下載（可用瀏覽器直接開啟，或部署至 GitHub Pages） |
+| `index.html` | 圖庫頁面原始碼；建置後可搜尋、分類、放大檢視與下載原圖 |
 | `data/characters.json`、`data/scenes.json`、`data/mecha.json` | 機器可讀的角色／場景／機甲資料（含 repo 內圖片相對路徑） |
 | `assets/characters/<角色ID>/` | 各角色視覺參考圖 |
 | `assets/scenes/<場景ID>/` | 各場景視覺參考圖 |
@@ -41,3 +41,37 @@
 ## 授權
 
 本素材包內容僅供《新巴比倫》開放創作計畫之非商業創作使用，正式授權條款以官方公告為準。
+
+
+## 線上圖庫與自動更新
+
+正式圖庫：https://mkhsu2002.github.io/Neo-Babylon-Media-Kit/
+
+將已核准、可依本素材包規範公開的圖片上傳至 **main 主分支**以下任一公開目錄，即表示要發布到圖庫：
+
+| 公開上傳目錄 | 網站分類 | 命名範例 |
+|---|---|---|
+| `assets/characters/` | 角色 | `assets/characters/NB-C001/陶比_正面.jpg` |
+| `assets/scenes/` | 場景 | `assets/scenes/SC-001/南方澳_清晨.jpg` |
+| `assets/mecha/` | 機甲 | `assets/mecha/NB-M001/關羽_正面.jpg` |
+
+- 支援 `.jpg`、`.jpeg`、`.png`、`.webp`、`.avif`、`.gif`（大小寫皆可）。GIF 縮圖為靜態首幀，下載保留原檔。SVG、其他格式不會索引。
+- 可直接在上述目錄或子目錄放圖。建議用「素材名稱_視角或版本」命名；中文檔名可用。未提供描述時，標題取自檔名（底線／連字號轉空格），分類取自目錄，ID 取自父資料夾或檔名；檔名、路徑、ID、名稱均可搜尋。
+- **不用逐張編輯 HTML，也不用填 manifest**。既有 `data/characters.json`、`data/scenes.json`、`data/mecha.json` 僅供選填的名稱、譯名、描述、出處、`keywords`。依 `images` 路徑或父資料夾 `id` 配對；同一素材資料夾新上傳圖片可自動繼承資料。
+- 主分支每次 push（含 GitHub 網頁上傳）觸發 [Publish media gallery](https://github.com/mkhsu2002/Neo-Babylon-Media-Kit/actions/workflows/pages.yml)：安裝鎖定依賴 → 檢查 → 掃描公開目錄 → 產生縮圖與搜尋索引 → GitHub Pages 部署。通常數分鐘後生效；以 Actions 的成功狀態為準，開著的網頁需重新整理。
+- 修改、替換或刪除圖片同樣會在下次成功部署更新。部署失敗時保留上一版網站，可在 Actions 查看失敗原因。損壞或不符實際圖片格式的檔案會使建置失敗，避免發布無法使用的圖庫。
+- 不使用定時輪詢，不需要新增個人 token、Cloudflare 憑證或付費資源。GitHub Actions 使用平台內建的短期權限，只能讀取 repo 與部署 Pages。
+
+### 公開邊界與待審素材
+
+上述目錄是**公開發布區**，請勿放私人或未核准圖片；公開 GitHub repo 的檔案本身即可能被存取，網站排除規則不會讓 repo 檔案變成私人。
+
+檔名或任一父資料夾含 `CANDIDATE`、`NEEDS_GEOGRAPHY_FIX`、`UNAPPROVED`、`PENDING`、`REJECTED`、`DRAFT`、`PRIVATE`、`NEEDS_REVIEW`、`待審`、`未核准`、`需修正`、`私人`（英文不分大小寫）會排除；隱藏檔、符號連結與公開目錄外的圖片不會發布。若選填資料有 `status`，僅 `approved`、`published` 或 `public` 可發布。待審檔案不得僅為了上線而移除標記，須先由權利人核准。
+
+部署產物 `dist/` 只包含網站、已篩選的圖片、縮圖與圖庫索引，不會整份複製 repo。2026-10-18 初始上線檢查：repo 49 張，排除 2 張 `CANDIDATE` 及 1 張 `NEEDS_GEOGRAPHY_FIX`，發布 **46 張**（角色 18／場景 16／機甲 12）。此為當日快照，之後數量由每次建置自動更新。
+
+### 本機開發
+
+需要 Node.js 22 或更新版本。執行 `npm ci`、`npm test`、`npm run build`，再執行 `npm run preview`，開啟終端機顯示的本機網址。正式發布與本機預覽都使用 `dist/`；請勿直接發布 repo 根目錄。
+
+聯絡信箱：mksaid2025@gmail.com。所有下載與展示仍遵守本 README 及 [官方開放創作規範](https://neobabylon.icareu.tw/open-creation/)，本網站不新增或擴大授權。

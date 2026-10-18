@@ -1,0 +1,52 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,mkdir,writeFile,readFile,cp,readdir,rm,symlink} from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import sharp from 'sharp';
+import {collectImages,isPublicImage} from '../scripts/catalog.mjs';
+import {build} from '../scripts/build.mjs';
+
+test('publication boundary excludes review markers, hidden and unrelated paths', () => {
+  for(const file of ['assets/scenes/SC-1/test_CANDIDATE.jpg','assets/scenes/SC-1/NEEDS_GEOGRAPHY_FIX.png','assets/characters/private/photo.jpg','assets/mecha/.draft/pic.jpg','other/pic.jpg','assets/scenes/../secret.jpg','assets/scenes/item.svg']) assert.equal(isPublicImage(file),false,file);
+  for(const ext of ['jpg','JPEG','png','webp','avif','gif']) assert.equal(isPublicImage(`assets/scenes/new/新場景.${ext}`),true);
+});
+test('new uploads auto-index without metadata; replacement/deletion and excluded files propagate to deployment', async t => {
+  const root = await mkdtemp(path.join(os.tmpdir(),'nb-gallery-'));
+  t.after(() => rm(root,{recursive:true,force:true}));
+  for(const dir of ['assets/characters/new','assets/scenes/SC-001','assets/mecha','data']) await mkdir(path.join(root,dir),{recursive:true});
+  for(const file of ['index.html','favicon.svg']) await cp(file,path.join(root,file));
+  await cp('site',path.join(root,'site'),{recursive:true});
+  const pixel = await sharp({create:{width:4,height:3,channels:3,background:'#123456'}}).jpeg().toBuffer();
+  const upload = 'assets/characters/new/新角色_正面.jpg';
+  await writeFile(path.join(root,upload),pixel);
+  await writeFile(path.join(root,'assets/scenes/SC-001/test_CANDIDATE.jpg'),pixel);
+  await writeFile(path.join(root,'assets/scenes/SC-001/test_NEEDS_GEOGRAPHY_FIX.jpg'),pixel);
+  await symlink(path.join(root,upload),path.join(root,'assets/characters/new/link.jpg'));
+  const first = await build({root});
+  assert.equal(first.images.length,1);
+  assert.equal(first.images[0].name,'新角色 正面');
+  assert.equal(first.images[0].category,'characters');
+  assert.deepEqual(await readFile(path.join(root,'dist',upload)),pixel);
+  assert.ok(first.images[0].thumbnail.endsWith('.webp'));
+  assert.equal((await readFile(path.join(root,'dist/data/catalog.js'),'utf8')).includes('CANDIDATE'),false);
+  const extra = 'assets/mecha/新機甲.webp';
+  await writeFile(path.join(root,extra),await sharp(pixel).webp().toBuffer());
+  assert.equal((await build({root})).images.length,2);
+  await rm(path.join(root,upload));
+  const last = await build({root});
+  assert.equal(last.images.length,1);
+  assert.equal(last.images[0].path,extra);
+  await assert.rejects(readFile(path.join(root,'dist',upload)));
+  await rm(path.join(root,extra));
+  assert.equal((await build({root})).images.length,0);
+  await writeFile(path.join(root,'assets/mecha/broken.png'),pixel);
+  await assert.rejects(build({root}),/extension\/content mismatch/);
+});
+test('public repo index only contains available eligible files', async () => {
+  const images = await collectImages(process.cwd());
+  assert.equal(images.some(image => /CANDIDATE|NEEDS_GEOGRAPHY_FIX/i.test(image.path)),false);
+  for(const image of images) assert.ok((await readFile(image.path)).length > 0);
+  const toby = images.find(image => image.filename.includes('TOBY_RED_FRONT'));
+  if (toby) assert.equal(toby.name,'紅髮陶比');
+});
