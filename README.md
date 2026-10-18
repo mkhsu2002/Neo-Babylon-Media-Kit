@@ -43,11 +43,11 @@
 本素材包內容僅供《新巴比倫》開放創作計畫之非商業創作使用，正式授權條款以官方公告為準。
 
 
-## 線上圖庫與自動更新
+## 線上圖庫與手動發布
 
 正式圖庫：https://mkhsu2002.github.io/Neo-Babylon-Media-Kit/
 
-將已核准、可依本素材包規範公開的圖片上傳至 **main 主分支**以下任一公開目錄，即表示要發布到圖庫：
+將已核准、可依本素材包規範公開的圖片上傳至 **main 主分支**以下任一公開目錄，可供後續手動建置發布；上傳或 push 不會自動更新網站：
 
 | 公開上傳目錄 | 網站分類 | 命名範例 |
 |---|---|---|
@@ -58,9 +58,9 @@
 - 支援 `.jpg`、`.jpeg`、`.png`、`.webp`、`.avif`、`.gif`（大小寫皆可）。GIF 縮圖為靜態首幀，下載保留原檔。SVG、其他格式不會索引。
 - 可直接在上述目錄或子目錄放圖。建議用「素材名稱_視角或版本」命名；中文檔名可用。未提供描述時，標題取自檔名（底線／連字號轉空格），分類取自目錄，ID 取自父資料夾或檔名；檔名、路徑、ID、名稱均可搜尋。
 - **不用逐張編輯 HTML，也不用填 manifest**。既有 `data/characters.json`、`data/scenes.json`、`data/mecha.json` 僅供選填的名稱、譯名、描述、出處、`keywords`。依 `images` 路徑或父資料夾 `id` 配對；同一素材資料夾新上傳圖片可自動繼承資料。
-- 主分支每次 push（含 GitHub 網頁上傳）觸發 [Publish media gallery](https://github.com/mkhsu2002/Neo-Babylon-Media-Kit/actions/workflows/pages.yml)：安裝鎖定依賴 → 檢查 → 掃描公開目錄 → 產生縮圖與搜尋索引 → GitHub Pages 部署。通常數分鐘後生效；以 Actions 的成功狀態為準，開著的網頁需重新整理。
+- 自動發布已停用，僅保留手動觸發（`workflow_dispatch`）。需要發布時，可在 [Publish media gallery](https://github.com/mkhsu2002/Neo-Babylon-Media-Kit/actions/workflows/pages.yml) 選擇 **Run workflow**：安裝鎖定依賴 → 檢查 → 掃描公開目錄 → 產生縮圖與搜尋索引 → GitHub Pages 部署。通常數分鐘後生效；以 Actions 的成功狀態為準，開著的網頁需重新整理。網站後續更新另行安排。
 - 修改、替換或刪除圖片同樣會在下次成功部署更新。部署失敗時保留上一版網站，可在 Actions 查看失敗原因。損壞或不符實際圖片格式的檔案會使建置失敗，避免發布無法使用的圖庫。
-- 不使用定時輪詢，不需要新增個人 token、Cloudflare 憑證或付費資源。GitHub Actions 使用平台內建的短期權限，只能讀取 repo 與部署 Pages。
+- 未設定 push、排程或其他自動觸發，不使用定時輪詢；不需要新增個人 token、Cloudflare 憑證或付費資源。GitHub Actions 使用平台內建的短期權限，只能讀取 repo 與部署 Pages。
 
 ### 公開邊界與待審素材
 
