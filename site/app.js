@@ -8,7 +8,7 @@
   const url = path => path.split('/').map(encodeURIComponent).join('/');
   const size = bytes => bytes >= 1048576 ? `${(bytes / 1048576).toFixed(1)} MB` : `${Math.ceil(bytes / 1024)} KB`;
   let category = 'all', visible = [], current = 0;
-  const searchIndex = new Map(catalog.map(image => [image.path, normalize([image.name, image.name_en, image.name_jp, image.id, image.description, image.source, image.path, ...(image.keywords || [])].join(' '))]));
+  const searchIndex = new Map(catalog.map(image => [image.path, normalize([image.name, image.name_en, image.name_jp, image.id, image.description, image.source, image.stype, image.path, ...(image.keywords || [])].join(' '))]));
 
   function render() {
     const terms = normalize($('search').value).trim().split(/\s+/).filter(Boolean);
@@ -22,7 +22,7 @@
     if ($('sort').value === 'name') visible.sort((a,b) => a.name.localeCompare(b.name, 'zh-Hant') || a.filename.localeCompare(b.filename));
     $('clear-search').hidden = !terms.length;
     $('result-count').textContent = `顯示 ${visible.length} / ${catalog.length} 張圖片${category === 'all' ? '' : ` · ${labels[category]}`}`;
-    $('grid').innerHTML = visible.map((image,index) => `<article class="card"><button type="button" class="thumb" data-preview="${index}" aria-label="放大檢視 ${escape(image.name)}：${escape(image.filename)}"><img src="${url(image.thumbnail)}" alt="${escape(image.name)} · ${escape(image.filename)}" width="640" height="480" loading="lazy" decoding="async"><span class="category">${labels[image.category]}</span><span class="expand" aria-hidden="true">↗</span></button><div class="card-info"><div class="card-meta"><span>${escape(image.id)}</span><span>${image.width} × ${image.height}</span></div><h3>${escape(image.name)}</h3><p class="variant" title="${escape(image.filename)}">${escape(image.filename)}</p><div class="card-actions"><button type="button" data-preview="${index}">放大預覽 ↗</button><a href="${url(image.path)}" download="${escape(image.filename)}" aria-label="下載 ${escape(image.name)} ${escape(image.filename)} 原圖">下載原圖 ↓</a></div></div></article>`).join('');
+    $('grid').innerHTML = visible.map((image,index) => `<article class="card"><button type="button" class="thumb" data-preview="${index}" aria-label="放大檢視 ${escape(image.name)}：${escape(image.filename)}"><img src="${url(image.thumbnail)}" alt="${escape(image.name)} · ${escape(image.filename)}" width="640" height="480" loading="lazy" decoding="async"><span class="category">${labels[image.category]}</span><span class="expand" aria-hidden="true">↗</span></button><div class="card-info"><div class="card-meta"><span>${escape(image.id)}</span><span>${image.width} × ${image.height}</span></div><h3>${escape(image.name)}${image.stype ? `<span class="stype">${escape(image.stype)}</span>` : ''}</h3><p class="variant" title="${escape(image.filename)}">${escape(image.filename)}</p><div class="card-actions"><button type="button" data-preview="${index}">放大預覽 ↗</button><a href="${url(image.path)}" download="${escape(image.filename)}" aria-label="下載 ${escape(image.name)} ${escape(image.filename)} 原圖">下載原圖 ↓</a></div></div></article>`).join('');
     $('empty').hidden = visible.length > 0;
     if (!catalog.length) {
       $('empty-title').textContent = window.MEDIA_CATALOG ? '公開素材準備中' : '素材清單暫時無法載入';
@@ -43,7 +43,7 @@
     $('preview-image').src = url(image.path);
     $('preview-image').alt = `${image.name} · ${image.filename}`;
     $('preview-title').textContent = image.name;
-    $('preview-category').textContent = `${labels[image.category]} / VISUAL REFERENCE`;
+    $('preview-category').textContent = `${labels[image.category]}${image.stype ? ` · ${image.stype}` : ''} / VISUAL REFERENCE`;
     $('preview-translation').textContent = [image.name_en, image.name_jp].filter(Boolean).join(' · ');
     $('preview-description').textContent = image.description || '公開視覺參考圖。使用時請遵守素材包 README 與官方開放創作規範。';
     $('preview-id').textContent = image.id;

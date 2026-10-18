@@ -50,3 +50,13 @@ test('public repo index only contains available eligible files', async () => {
   const toby = images.find(image => image.filename.includes('TOBY_RED_FRONT'));
   if (toby) assert.equal(toby.name,'紅髮陶比');
 });
+
+
+test('optional scene type metadata survives automatic indexing', async () => {
+  const records = JSON.parse(await readFile('data/scenes.json', 'utf8'));
+  const images = await collectImages(process.cwd());
+  for (const image of images.filter(image => image.category === 'scenes')) {
+    const record = records.find(record => record.images?.includes(image.path)) || records.find(record => record.id === image.id);
+    assert.equal(image.stype, record?.stype || '');
+  }
+});

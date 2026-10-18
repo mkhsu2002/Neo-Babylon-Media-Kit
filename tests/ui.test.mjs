@@ -45,3 +45,25 @@ test('honest empty catalog and escaped untrusted filenames',t=>{
   assert.equal(s.d.querySelector('h3').textContent,'<script>bad</script>');
   assert.equal(s.d.querySelector('[onerror]'),null);
 });
+
+
+test('page loads the generated catalog and the matching app once, in order', t => {
+  const dom = new JSDOM(html); t.after(() => dom.window.close());
+  const scripts = [...dom.window.document.querySelectorAll('script')];
+  assert.deepEqual(scripts.map(script => script.getAttribute('src')), ['data/catalog.js', 'site/app.js']);
+  assert.ok(scripts.every(script => script.defer));
+  assert.equal(dom.window.document.querySelector('#q'), null);
+});
+
+test('scene type labels remain searchable and visible in cards and preview', t => {
+  const s = setup([image({name:'灣區城·學院大門', id:'SC-008-S05', category:'scenes', path:'assets/scenes/SC-008-S05/bay_gate.jpg', stype:'子場景'}), image({name:'灣區城·夜間', id:'SC-008-V01', category:'scenes', path:'assets/scenes/SC-008-V01/bay_city_night.jpg', stype:'變體'})]); t.after(s.close);
+  s.input('子場景');
+  assert.equal(s.d.querySelectorAll('.card').length, 1);
+  assert.equal(s.d.querySelector('.stype').textContent, '子場景');
+  s.d.querySelector('[data-preview="0"]').click();
+  assert.match(s.d.getElementById('preview-category').textContent, /子場景/);
+  s.d.getElementById('close-preview').click();
+  s.input('變體');
+  assert.equal(s.d.querySelectorAll('.card').length, 1);
+  assert.equal(s.d.querySelector('.stype').textContent, '變體');
+});

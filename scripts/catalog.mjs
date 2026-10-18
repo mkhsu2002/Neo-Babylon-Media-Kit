@@ -36,7 +36,7 @@ export async function collectImages(root) {
       const record = records.find(item => item.images?.includes(relativePath)) || records.find(item => item.id === folder) || {};
       if(record.status && !['approved', 'published', 'public'].includes(String(record.status).toLowerCase())) continue;
       const stem = filename.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ').trim();
-      images.push({path:relativePath, filename, category, id:record.id || (folder === category ? filename.replace(/\.[^.]+$/, '') : folder), name:record.name_zh || stem, name_en:record.name_en || '', name_jp:record.name_jp || '', description:record.desc || '', source:record.source || '', keywords:Array.isArray(record.keywords) ? record.keywords : []});
+      images.push({path:relativePath, filename, category, id:record.id || (folder === category ? filename.replace(/\.[^.]+$/, '') : folder), name:record.name_zh || stem, name_en:record.name_en || '', name_jp:record.name_jp || '', description:record.desc || '', source:record.source || '', stype:record.stype || '', keywords:Array.isArray(record.keywords) ? record.keywords : []});
     }
   }
   return images;

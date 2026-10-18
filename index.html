@@ -1,175 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Neo Babylon 開放創作素材包</title>
-<style>
-  :root{
-    --bg:#0b0e14; --panel:#141a26; --panel2:#1a2233; --line:#26314a;
-    --txt:#e8edf5; --muted:#8b96ad; --accent:#5eead4; --accent2:#7dd3fc;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--bg);color:var(--txt);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;min-height:100vh}
-  header{padding:36px 24px 20px;text-align:center;border-bottom:1px solid var(--line);
-    background:radial-gradient(600px 200px at 50% -60px, rgba(94,234,212,.12), transparent)}
-    .stype{display:inline-block;font-size:11px;color:#fbbf24;border:1px solid #fbbf2455;border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:middle}
-  header h1{font-size:28px;letter-spacing:2px}
-  header h1 span{color:var(--accent)}
-  header p{color:var(--muted);margin-top:8px;font-size:14px}
-  .toolbar{max-width:1100px;margin:0 auto;padding:20px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-  .search{flex:1;min-width:220px;display:flex}
-  .search input{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:8px 0 0 8px;
-    color:var(--txt);padding:10px 14px;font-size:15px;outline:none}
-  .search input:focus{border-color:var(--accent)}
-  .search button{background:var(--accent);border:none;border-radius:0 8px 8px 0;padding:0 18px;
-    font-size:15px;cursor:pointer;color:#06251f;font-weight:bold}
-  .tabs{display:flex;gap:8px}
-  .tabs button{background:var(--panel);border:1px solid var(--line);color:var(--muted);
-    padding:10px 20px;border-radius:8px;cursor:pointer;font-size:15px}
-  .tabs button.active{background:var(--panel2);color:var(--accent);border-color:var(--accent)}
-  .count{max-width:1100px;margin:0 auto;padding:0 24px;color:var(--muted);font-size:13px}
-  .grid{max-width:1100px;margin:0 auto;padding:16px 24px 60px;display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;
-    display:flex;flex-direction:column;transition:border-color .2s}
-  .card:hover{border-color:var(--accent)}
-  .thumb{position:relative;aspect-ratio:4/3;background:#000;cursor:zoom-in;overflow:hidden}
-  .thumb img{width:100%;height:100%;object-fit:cover;display:block}
-  .thumb .more{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.65);color:#fff;
-    font-size:12px;padding:3px 9px;border-radius:20px}
-  .badge{position:absolute;left:8px;top:8px;font-size:12px;padding:3px 10px;border-radius:20px;
-    background:rgba(94,234,212,.15);color:var(--accent);border:1px solid rgba(94,234,212,.4)}
-  .badge.scene{background:rgba(125,211,252,.15);color:var(--accent2);border-color:rgba(125,211,252,.4)}
-  .badge.mecha{background:rgba(251,191,36,.15);color:#fbbf24;border-color:rgba(251,191,36,.4)}
-  .info{padding:14px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
-  .info h3{font-size:17px}
-  .info .names{font-size:13px;color:var(--muted)}
-  .info .src{font-size:12px;color:var(--accent2)}
-  .info .desc{font-size:13px;color:var(--muted);line-height:1.6;flex:1}
-  .actions{display:flex;gap:8px;padding:0 16px 14px}
-  .actions button,.actions a{flex:1;text-align:center;font-size:13px;padding:8px;border-radius:8px;cursor:pointer;
-    border:1px solid var(--line);background:var(--panel2);color:var(--txt);text-decoration:none}
-  .actions button:hover,.actions a:hover{border-color:var(--accent);color:var(--accent)}
-  /* lightbox */
-  .lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;
-    justify-content:center;z-index:50;flex-direction:column;padding:20px}
-  .lb.open{display:flex}
-  .lb img{max-width:92vw;max-height:78vh;object-fit:contain;border-radius:8px}
-  .lb .cap{color:var(--muted);font-size:13px;margin-top:10px;text-align:center}
-  .lb .row{display:flex;gap:10px;margin-top:14px;align-items:center}
-  .lb button{background:var(--panel2);border:1px solid var(--line);color:var(--txt);
-    padding:9px 18px;border-radius:8px;cursor:pointer;font-size:14px}
-  .lb button:hover{border-color:var(--accent);color:var(--accent)}
-  .lb .close{position:absolute;top:16px;right:20px;font-size:28px;background:none;border:none;color:var(--muted)}
-  footer{text-align:center;color:var(--muted);font-size:12px;padding:24px;border-top:1px solid var(--line)}
-  footer a{color:var(--accent)}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0c1217">
+<meta name="description" content="探索《新巴比倫》開放創作素材：搜尋角色、場景與機甲，放大檢視並下載原圖，用於非商業視聽創作。">
+<title>新巴比倫 · 開放創作圖庫</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="site/styles.css"><script src="data/catalog.js" defer></script><script src="site/app.js" defer></script>
 </head>
 <body>
-<header>
-  <h1>NEO BABYLON <span>開放創作素材包</span></h1>
-  <p>Open Creation Media Kit — 官方已公開人物與場景視覺參考</p>
-</header>
-<div class="toolbar">
-  <div class="search">
-    <input id="q" type="text" placeholder="搜尋中文名 / 英文名 / 日文名 / 描述…">
-    <button onclick="doSearch()">搜尋</button>
-  </div>
-  <div class="tabs">
-    <button data-t="all" class="active" onclick="setTab('all')">全部</button>
-    <button data-t="char" onclick="setTab('char')">角色</button>
-    <button data-t="scene" onclick="setTab('scene')">場景</button>
-    <button data-t="mecha" onclick="setTab('mecha')">機甲</button>
-  </div>
-</div>
-<div class="count" id="count"></div>
-<div class="grid" id="grid"></div>
-
-<div class="lb" id="lb" onclick="if(event.target===this)closeLb()">
-  <button class="close" onclick="closeLb()">×</button>
-  <img id="lbimg" src="" alt="">
-  <div class="cap" id="lbcap"></div>
-  <div class="row">
-    <button onclick="lbNav(-1)">← 上一張</button>
-    <a id="lbdl" href="" download><button>下載此圖</button></a>
-    <button onclick="lbNav(1)">下一張 →</button>
-  </div>
-</div>
-
-<footer>
-  素材僅供《新巴比倫》開放創作計畫非商業創作使用 · <a href="https://neobabylon.icareu.tw/open-creation/" target="_blank">使用規範</a>
-</footer>
-
-<script>
-let DB = {char:[], scene:[], mecha:[]};
-let tab = 'all', kw = '';
-let lbList = [], lbIdx = 0;
-
-fetch('data/characters.json').then(r=>r.json()).then(d=>{DB.char=d.map(x=>({...x,_t:'char'}));render();});
-fetch('data/scenes.json').then(r=>r.json()).then(d=>{DB.scene=d.map(x=>({...x,_t:'scene'}));render();});
-fetch('data/mecha.json').then(r=>r.json()).then(d=>{DB.mecha=d.map(x=>({...x,_t:'mecha'}));render();});
-
-function setTab(t){tab=t;document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.t===t));render();}
-function doSearch(){kw=document.getElementById('q').value.trim().toLowerCase();render();}
-document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch();});
-document.getElementById('q').addEventListener('input',e=>{kw=e.target.value.trim().toLowerCase();render();});
-
-function match(x){
-  if(!kw) return true;
-  return (x.name_zh+' '+x.name_en+' '+x.name_jp+' '+x.desc+' '+x.source).toLowerCase().includes(kw);
-}
-function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-
-function render(){
-  const grid=document.getElementById('grid');
-  let items=[...DB.char,...DB.scene,...DB.mecha];
-  if(tab==='char') items=DB.char;
-  if(tab==='scene') items=DB.scene;
-  if(tab==='mecha') items=DB.mecha;
-  items=items.filter(match);
-  document.getElementById('count').textContent=`共 ${items.length} 筆（角色 ${DB.char.filter(match).length} · 場景 ${DB.scene.filter(match).length} · 機甲 ${DB.mecha.filter(match).length}）`;
-  grid.innerHTML=items.map((x,i)=>{
-    const badgeT=x._t==='char'?'角色':(x._t==='mecha'?'機甲':'場景');
-    const badgeC=x._t==='char'?'':(x._t==='mecha'?' mecha':' scene');
-    const sub=[x.name_en,x.name_jp].filter(Boolean).join(' · ');
-    const thumbs=x.images.slice(0,1).map(p=>
-      `<div class="thumb" onclick='openLb(${JSON.stringify(x.images)},0,${JSON.stringify(x.name_zh)})'>
-         <span class="badge${badgeC}">${badgeT}</span>
-         <img src="${p}" alt="${esc(x.name_zh)}" loading="lazy">
-         ${x.images.length>1?`<span class="more">+${x.images.length-1}</span>`:''}
-       </div>`).join('');
-    const dlAll=x.images.map(p=>`<a href="${p}" download>下載全部 (${x.images.length})</a>`).join('');
-    const stypeTag=(x.stype&&x.stype!=='主場景')?`<span class="stype">${esc(x.stype)}</span>`:'';
-    return `<div class="card">${thumbs}
-      <div class="info"><h3>${esc(x.name_zh)}${stypeTag}</h3>
-        ${sub?`<div class="names">${esc(sub)}</div>`:''}
-        <div class="src">${esc(x.source)} · ${esc(x.id)}</div>
-        <div class="desc">${esc(x.desc)}</div></div>
-      <div class="actions">
-        <button onclick='openLb(${JSON.stringify(x.images)},0,${JSON.stringify(x.name_zh)})'>檢視圖片</button>
-        ${dlAll}</div></div>`;
-  }).join('') || '<p style="color:var(--muted);grid-column:1/-1;text-align:center;padding:40px">沒有符合的結果</p>';
-}
-
-function openLb(images,idx,name){
-  lbList=images; lbIdx=idx; showLb(name);
-  document.getElementById('lb').classList.add('open');
-}
-function showLb(name){
-  const p=lbList[lbIdx];
-  document.getElementById('lbimg').src=p;
-  document.getElementById('lbcap').textContent=`${name}（${lbIdx+1}/${lbList.length}）· ${p.split('/').pop()}`;
-  document.getElementById('lbdl').href=p;
-}
-function lbNav(d){lbIdx=(lbIdx+d+lbList.length)%lbList.length;showLb(document.getElementById('lbcap').textContent.split('（')[0]);}
-function closeLb(){document.getElementById('lb').classList.remove('open');}
-document.addEventListener('keydown',e=>{
-  if(!document.getElementById('lb').classList.contains('open'))return;
-  if(e.key==='Escape')closeLb();
-  if(e.key==='ArrowLeft')lbNav(-1);
-  if(e.key==='ArrowRight')lbNav(1);
-});
-</script>
-</body>
-</html>
+<a class="skip" href="#library">跳至素材圖庫</a>
+<header class="masthead wrap"><a class="brand" href="./" aria-label="新巴比倫圖庫首頁"><span class="brand-mark" aria-hidden="true">N∕B</span><span>NEO BABYLON<small>新巴比倫 · 開放創作圖庫</small></span></a><nav aria-label="主要導覽"><a href="#library">探索素材</a><a href="https://neobabylon.icareu.tw/open-creation/">使用規範 ↗</a><a class="repo-link" href="https://github.com/mkhsu2002/Neo-Babylon-Media-Kit">GitHub ↗</a></nav></header>
+<main>
+<section class="hero wrap" aria-labelledby="hero-title"><div><p class="eyebrow"><span class="signal" aria-hidden="true"></span> OPEN CREATION ARCHIVE / 01</p><h1 id="hero-title">故事已經存在。<br>讓想像<span>有跡可循。</span></h1><p class="intro">從人物的一個眼神，到人類消失後的城市。<br>探索《新巴比倫》官方公開視覺素材，<br>開啟你的下一段非商業視聽創作。</p><a class="primary-link" href="#library">探索素材圖庫 <span aria-hidden="true">↓</span></a><p class="hero-note">保留故事核心 · 自由詮釋畫風、鏡頭與聲音</p></div><figure class="hero-visual" id="hero-visual" hidden><img id="hero-image" alt="" width="960" height="540"><figcaption><span>WORLD REFERENCE</span><span id="hero-caption"></span></figcaption></figure></section>
+<section class="archive-bar wrap" aria-label="圖庫概況"><p><strong id="total-count">—</strong><span>張可用圖片</span></p><p><strong>03</strong><span>素材分類</span></p><p class="license-note"><span class="signal" aria-hidden="true"></span>僅供非商業創作 <a href="https://neobabylon.icareu.tw/open-creation/">閱讀完整規範 ↗</a></p></section>
+<section class="library wrap" id="library" aria-labelledby="library-title"><div class="section-heading"><div><p class="eyebrow">THE VISUAL LIBRARY</p><h2 id="library-title">選擇你的創作起點</h2></div><p>人物、場景、機甲，每張都有故事。</p></div>
+<div class="tools"><div class="filters" role="group" aria-label="素材分類"><button type="button" data-category="all" aria-pressed="true">全部 <span></span></button><button type="button" data-category="characters" aria-pressed="false">角色 <span></span></button><button type="button" data-category="scenes" aria-pressed="false">場景 <span></span></button><button type="button" data-category="mecha" aria-pressed="false">機甲 <span></span></button></div><div class="search"><label class="sr-only" for="search">搜尋素材名稱、ID、關鍵字或檔名</label><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="搜尋名稱、ID、關鍵字…" autocomplete="off"><button id="clear-search" type="button" aria-label="清除搜尋" hidden>×</button></div></div>
+<div class="results-bar"><p id="result-count" role="status" aria-live="polite">正在載入素材…</p><label>排列 <select id="sort"><option value="default">素材順序</option><option value="name">名稱 A–Z</option></select></label></div>
+<div id="grid" class="grid"></div><div id="empty" class="empty" hidden><p class="eyebrow">NO RESULTS</p><h3 id="empty-title">沒有符合的素材</h3><p id="empty-description">試試角色名稱、地點或素材 ID，也可以清除篩選重新探索。</p><button id="reset" class="button" type="button">清除所有篩選</button></div>
+<noscript><p class="empty">請啟用 JavaScript 以搜尋、預覽素材。也可以前往 <a href="https://github.com/mkhsu2002/Neo-Babylon-Media-Kit">GitHub 素材包</a> 查看圖片與規範。</p></noscript></section>
+<aside class="guidelines wrap" aria-labelledby="rules-title"><span class="eyebrow">BEFORE YOU CREATE</span><h2 id="rules-title">改變表現手法，保留故事核心。</h2><p>本素材包僅供《新巴比倫》開放創作計畫的非商業創作。請保留角色核心設定、人物關係與事件結果；公開發表時標示為非官方衍生創作，並註明原作與創作者署名。商業使用須事先取得官方書面同意。</p><div><a href="https://neobabylon.icareu.tw/open-creation/">完整使用規範 ↗</a><a href="https://github.com/mkhsu2002/Neo-Babylon-Media-Kit#readme">素材包 README ↗</a><a href="mailto:mksaid2025@gmail.com">聯絡官方 ↗</a></div></aside>
+</main>
+<footer class="wrap"><p>NEO BABYLON <span>新巴比倫開放創作計畫</span></p><p>原作、人物、設定與品牌權利歸原權利人所有。</p></footer>
+<dialog id="preview" aria-labelledby="preview-title"><div class="preview-shell"><button id="close-preview" class="close-preview" type="button" aria-label="關閉預覽">×</button><div class="preview-image-wrap"><img id="preview-image" alt=""><p id="preview-error" hidden>圖片暫時無法載入，請稍後重試。</p></div><div class="preview-info"><p class="eyebrow" id="preview-category"></p><h2 id="preview-title"></h2><p class="translation" id="preview-translation"></p><p class="description" id="preview-description"></p><dl><div><dt>素材 ID</dt><dd id="preview-id"></dd></div><div><dt>出處</dt><dd id="preview-source"></dd></div><div><dt>原圖</dt><dd id="preview-meta"></dd></div></dl><p class="filename" id="preview-filename"></p><a id="download" class="button download" download>下載原圖 <span aria-hidden="true">↓</span></a><p class="download-note">僅供非商業創作 · <a href="https://neobabylon.icareu.tw/open-creation/">使用規範 ↗</a></p><div class="preview-navigation"><button id="previous" type="button" aria-label="上一張圖片">← 上一張</button><span id="preview-position"></span><button id="next" type="button" aria-label="下一張圖片">下一張 →</button></div></div></div></dialog>
+</body></html>
