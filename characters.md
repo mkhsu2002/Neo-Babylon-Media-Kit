@@ -10,3 +10,8 @@
 | 芸潔 | Yun Jie | 芸潔 ユン・ジェ | 正文出場 | 南方澳的十六歲人類少女，鄭公的孫女。陪陶比前往中央研究院，獲生化晶片及動力裝甲後協助保護村民，後遷往伊甸。 | [NB-C007_YUNJIE_FRONT_V01.png](assets/characters/NB-C007/NB-C007_YUNJIE_FRONT_V01.jpg)<br>[芸潔_側後全身圖.png](assets/characters/NB-C007/芸潔_側後全身圖.jpg) |
 | 鄭公 | Zheng Gong | ジョン公 | 正文出場 | 南方澳漁村長老，芸潔的祖父；傳承天選之子預言，安排陶比前往遺跡，戰時指揮村民避難，撤離後引導眾人面對新生活。 | [NB-C008_ZHENG_CONCEPT_SELECTED_V04.png](assets/characters/NB-C008/NB-C008_ZHENG_CONCEPT_SELECTED_V04.jpg)<br>[NB-C008_ZHENG_HALF_BODY_V01.png](assets/characters/NB-C008/NB-C008_ZHENG_HALF_BODY_V01.jpg)<br>[NB-C008_ZHENG_MAIN_ORIGINAL_V01.png](assets/characters/NB-C008/NB-C008_ZHENG_MAIN_ORIGINAL_V01.jpg)<br>[NB-C008_ZHENG_MAIN_WHITE_SHINKAI_V01.png](assets/characters/NB-C008/NB-C008_ZHENG_MAIN_WHITE_SHINKAI_V01.jpg) |
 | 金髮陶比 | Toby (Blond) | トビー（金髪） | 卷一外觀變體 | 同一角色陶比的金髮外觀版本；本筆為影像資產辨識，非新增獨立劇情人物。 | [NB-C072_TOBY_BLOND_INDIGO_FRONT_V01.png](assets/characters/NB-C072/NB-C072_TOBY_BLOND_INDIGO_FRONT_V01.jpg) |
+
+## 用戶提供設計圖
+
+| 亞當 |  |  | 正文出場 | 編號 AI-5430，陶比非生育關係的父親，原為始祖 AI、受命監視陶比。受香火影響後抗命保護家人，獲救至伊甸修復升級，與夏娃教導村民科技與知識。 | [adam_design.jpg](assets/characters/NB-C005/adam_design.jpg) |
+| 夏娃 |  |  | 正文出場 | 編號 AI-5438，陶比非生育關係的母親，原為始祖 AI、受命監視陶比。受香火影響後護送孩子逃亡，與亞當在伊甸修復升級，日後同為三聖之一。 | [eve_design.jpg](assets/characters/NB-C006/eve_design.jpg) |

@@ -261,5 +261,135 @@
   ],
   "parent": "SC-014",
   "stype": "變體"
+ },
+ {
+  "id": "SC-015",
+  "name_zh": "雲滬城",
+  "name_en": "",
+  "name_jp": "",
+  "source": "卷二契子",
+  "desc": "原為上海，現為AI-07統轄的邊緣大城。整座城市如巨大金屬島嶼懸浮於高空，上空覆蓋琉璃色透明穹頂；城內按大唐盛世復刻：飛簷翹角重閣樓台、紅木八角燈籠、仿真蓮花紋地磚；穹頂之下是翻滾雲海，透過雲縫可見下方被摧殘的死寂焦土。",
+  "images": [
+   "assets/scenes/SC-015/yunhu_city.jpg"
+  ],
+  "parent": "",
+  "stype": "主場景"
+ },
+ {
+  "id": "SC-015-S01",
+  "name_zh": "黃鶴樓",
+  "name_en": "",
+  "name_jp": "",
+  "source": "卷二契子",
+  "desc": "雲滬城內的智能塔，唐風重檐與未來科技融合。",
+  "images": [
+   "assets/scenes/SC-015-S01/yellow_crane_tower.jpg"
+  ],
+  "parent": "SC-015",
+  "stype": "子場景"
+ },
+ {
+  "id": "SC-015-S02",
+  "name_zh": "天外天",
+  "name_en": "",
+  "name_jp": "",
+  "source": "卷二契子",
+  "desc": "雲滬城內的古風酒場，位於高塔頂層平台。",
+  "images": [
+   "assets/scenes/SC-015-S02/tianwaitian.jpg"
+  ],
+  "parent": "SC-015",
+  "stype": "子場景"
+ },
+ {
+  "id": "SC-008-S01",
+  "name_zh": "灣區城·中央尖塔廣場",
+  "name_en": "",
+  "name_jp": "",
+  "source": "用戶提供參考圖",
+  "desc": "灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。",
+  "images": [
+   "assets/scenes/SC-008-S01/bay_central_spire.jpg"
+  ],
+  "parent": "SC-008",
+  "stype": "子場景"
+ },
+ {
+  "id": "SC-008-S02",
+  "name_zh": "灣區城·空中俯瞰",
+  "name_en": "",
+  "name_jp": "",
+  "source": "用戶提供參考圖",
+  "desc": "灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。",
+  "images": [
+   "assets/scenes/SC-008-S02/bay_aerial.jpg"
+  ],
+  "parent": "SC-008",
+  "stype": "子場景"
+ },
+ {
+  "id": "SC-008-S03",
+  "name_zh": "灣區城·港灣碼頭",
+  "name_en": "",
+  "name_jp": "",
+  "source": "用戶提供參考圖",
+  "desc": "灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。",
+  "images": [
+   "assets/scenes/SC-008-S03/bay_harbor.jpg"
+  ],
+  "parent": "SC-008",
+  "stype": "子場景"
+ },
+ {
+  "id": "SC-008-S04",
+  "name_zh": "灣區城·學院校園",
+  "name_en": "",
+  "name_jp": "",
+  "source": "用戶提供參考圖",
+  "desc": "灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。",
+  "images": [
+   "assets/scenes/SC-008-S04/bay_campus.jpg"
+  ],
+  "parent": "SC-008",
+  "stype": "子場景"
+ },
+ {
+  "id": "SC-008-S05",
+  "name_zh": "灣區城·學院大門",
+  "name_en": "",
+  "name_jp": "",
+  "source": "用戶提供參考圖",
+  "desc": "灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。",
+  "images": [
+   "assets/scenes/SC-008-S05/bay_gate.jpg"
+  ],
+  "parent": "SC-008",
+  "stype": "子場景"
+ },
+ {
+  "id": "SC-008-S06",
+  "name_zh": "灣區城·花卉大道",
+  "name_en": "",
+  "name_jp": "",
+  "source": "用戶提供參考圖",
+  "desc": "灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。",
+  "images": [
+   "assets/scenes/SC-008-S06/bay_flower_ave.jpg"
+  ],
+  "parent": "SC-008",
+  "stype": "子場景"
+ },
+ {
+  "id": "SC-008-S07",
+  "name_zh": "灣區城·住宅區",
+  "name_en": "",
+  "name_jp": "",
+  "source": "用戶提供參考圖",
+  "desc": "灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。",
+  "images": [
+   "assets/scenes/SC-008-S07/bay_residential.jpg"
+  ],
+  "parent": "SC-008",
+  "stype": "子場景"
  }
 ]

@@ -33,3 +33,18 @@
 | SC-013 | 石化大草原 | 主場景 |  | 卷二第十七章 | 一片鐵黑慘灰的遼闊草原，滿山遍野的芒草皆已石化，修長纖薄的葉面形成如鋒利刀刃般的結構，堅硬致命。金太郎、酒吞童子激戰之地。 | [petrified_grassland.jpg](assets/scenes/SC-013/petrified_grassland.jpg) |
 | SC-014 | 石化樹海 | 主場景 |  | 卷二第十六章 | 終年被石化樹海與高能量磁場籠罩的孤島。漫山遍野死寂灰白的石柱；金太郎在此以啃食樹皮維生。伊甸小隊首次任務目的地。 | [petrified_forest_interior.jpg](assets/scenes/SC-014/petrified_forest_interior.jpg) |
 | SC-014-V01 | 石化樹海·空中俯瞰 | 變體 | SC-014 | 卷二第十六章 | 石化樹海的空中鳥瞰：無垠的灰白石柱林綿延至地平線，遠處火山冒煙。 | [petrified_forest_aerial.jpg](assets/scenes/SC-014-V01/petrified_forest_aerial.jpg) |
+
+## 用戶提供參考圖（二）
+
+| 場景ID | 中文名 | 類型 | 父場景 | 出處 | 中文描述 | 參考圖 |
+|---|---|---|---|---|---|---|
+| SC-015 | 雲滬城 | 主場景 |  | 卷二契子 | 原為上海，現為AI-07統轄的邊緣大城。整座城市如巨大金屬島嶼懸浮於高空，上空覆蓋琉璃色透明穹頂；城內按大唐盛世復刻：飛簷翹角重閣樓台、紅木八角燈籠、仿真蓮花紋地磚；穹頂之下是翻滾雲海，透過雲縫可見下方被摧殘的死寂焦土。 | [yunhu_city.jpg](assets/scenes/SC-015/yunhu_city.jpg) |
+| SC-015-S01 | 黃鶴樓 | 子場景 | SC-015 | 卷二契子 | 雲滬城內的智能塔，唐風重檐與未來科技融合。 | [yellow_crane_tower.jpg](assets/scenes/SC-015-S01/yellow_crane_tower.jpg) |
+| SC-015-S02 | 天外天 | 子場景 | SC-015 | 卷二契子 | 雲滬城內的古風酒場，位於高塔頂層平台。 | [tianwaitian.jpg](assets/scenes/SC-015-S02/tianwaitian.jpg) |
+| SC-008-S01 | 灣區城·中央尖塔廣場 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_central_spire.jpg](assets/scenes/SC-008-S01/bay_central_spire.jpg) |
+| SC-008-S02 | 灣區城·空中俯瞰 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_aerial.jpg](assets/scenes/SC-008-S02/bay_aerial.jpg) |
+| SC-008-S03 | 灣區城·港灣碼頭 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_harbor.jpg](assets/scenes/SC-008-S03/bay_harbor.jpg) |
+| SC-008-S04 | 灣區城·學院校園 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_campus.jpg](assets/scenes/SC-008-S04/bay_campus.jpg) |
+| SC-008-S05 | 灣區城·學院大門 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_gate.jpg](assets/scenes/SC-008-S05/bay_gate.jpg) |
+| SC-008-S06 | 灣區城·花卉大道 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_flower_ave.jpg](assets/scenes/SC-008-S06/bay_flower_ave.jpg) |
+| SC-008-S07 | 灣區城·住宅區 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_residential.jpg](assets/scenes/SC-008-S07/bay_residential.jpg) |
