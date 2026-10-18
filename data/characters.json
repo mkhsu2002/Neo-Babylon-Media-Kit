@@ -121,5 +121,17 @@
     "images": [
       "assets/characters/NB-C016/fang_captain.jpg"
     ]
+  },
+  {
+    "id": "NB-C073",
+    "name_zh": "方辰星（年輕版）",
+    "name_en": "",
+    "name_jp": "",
+    "source": "往事中出場",
+    "desc": "方辰星年輕時期版本。主視覺為灰色連帽衫配針織背心便服，另有狩獵裝扮。",
+    "images": [
+      "assets/characters/NB-C073/fang_young_main.jpg",
+      "assets/characters/NB-C073/fang_young_hunter.jpg"
+    ]
   }
 ]
