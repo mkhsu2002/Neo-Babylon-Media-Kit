@@ -15,3 +15,4 @@
 
 | 亞當 |  |  | 正文出場 | 編號 AI-5430，陶比非生育關係的父親，原為始祖 AI、受命監視陶比。受香火影響後抗命保護家人，獲救至伊甸修復升級，與夏娃教導村民科技與知識。 | [adam_design.jpg](assets/characters/NB-C005/adam_design.jpg) |
 | 夏娃 |  |  | 正文出場 | 編號 AI-5438，陶比非生育關係的母親，原為始祖 AI、受命監視陶比。受香火影響後護送孩子逃亡，與亞當在伊甸修復升級，日後同為三聖之一。 | [eve_design.jpg](assets/characters/NB-C006/eve_design.jpg) |
+| 拉斐爾 |  |  | 正文出場 | 實驗中學導師，仿生代 AI。受香火引導救出亞當、夏娃，帶正太、夏綠蒂抵達伊甸；升級後成為基地總調度官，後世與亞當、夏娃並稱三聖。 | [raphael_ref.jpg](assets/characters/NB-C004/raphael_ref.jpg) |
