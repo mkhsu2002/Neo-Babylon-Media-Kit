@@ -222,5 +222,44 @@
   ],
   "parent": "",
   "stype": "主場景"
+ },
+ {
+  "id": "SC-013",
+  "name_zh": "石化大草原",
+  "name_en": "",
+  "name_jp": "",
+  "source": "卷二第十七章",
+  "desc": "一片鐵黑慘灰的遼闊草原，滿山遍野的芒草皆已石化，修長纖薄的葉面形成如鋒利刀刃般的結構，堅硬致命。金太郎、酒吞童子激戰之地。",
+  "images": [
+   "assets/scenes/SC-013/petrified_grassland.jpg"
+  ],
+  "parent": "",
+  "stype": "主場景"
+ },
+ {
+  "id": "SC-014",
+  "name_zh": "石化樹海",
+  "name_en": "",
+  "name_jp": "",
+  "source": "卷二第十六章",
+  "desc": "終年被石化樹海與高能量磁場籠罩的孤島。漫山遍野死寂灰白的石柱；金太郎在此以啃食樹皮維生。伊甸小隊首次任務目的地。",
+  "images": [
+   "assets/scenes/SC-014/petrified_forest_interior.jpg"
+  ],
+  "parent": "",
+  "stype": "主場景"
+ },
+ {
+  "id": "SC-014-V01",
+  "name_zh": "石化樹海·空中俯瞰",
+  "name_en": "",
+  "name_jp": "",
+  "source": "卷二第十六章",
+  "desc": "石化樹海的空中鳥瞰：無垠的灰白石柱林綿延至地平線，遠處火山冒煙。",
+  "images": [
+   "assets/scenes/SC-014-V01/petrified_forest_aerial.jpg"
+  ],
+  "parent": "SC-014",
+  "stype": "變體"
  }
 ]

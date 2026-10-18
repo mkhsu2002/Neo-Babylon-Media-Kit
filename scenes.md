@@ -25,3 +25,11 @@
 | SC-011 | 實驗中學 |  |  | 主場景 |  | 官網概念圖 | 灣區城實驗中學，融合傳統日式建築與未來科技：古樸木質廊道與冷峻合金牆面交織，枯山水庭園旁藏有能量導管，設有飛行載具起降場。 | [school_campus.jpg](assets/scenes/SC-011/school_campus.jpg)<br>[school_day.jpg](assets/scenes/SC-011/school_day.jpg) |
 | SC-011-V01 | 實驗中學·櫻花校園 |  |  | 變體 | SC-011 | 官網概念圖 | 櫻花盛開時節的實驗中學校園，櫻花樹遍佈校園每個角落。 | [school_cherry.jpg](assets/scenes/SC-011-V01/school_cherry.jpg) |
 | SC-012 | 宙斯盾 |  |  | 主場景 |  | 官網概念圖 | 籠罩新巴比倫上空的半球狀高能電磁場結界，方圓100公里，看似透明卻堅不可摧。官網亦稱「宇宙盾」。 | [aegis.jpg](assets/scenes/SC-012/aegis.jpg) |
+
+## 用戶提供參考圖
+
+| 場景ID | 中文名 | 類型 | 父場景 | 出處 | 中文描述 | 參考圖 |
+|---|---|---|---|---|---|---|
+| SC-013 | 石化大草原 | 主場景 |  | 卷二第十七章 | 一片鐵黑慘灰的遼闊草原，滿山遍野的芒草皆已石化，修長纖薄的葉面形成如鋒利刀刃般的結構，堅硬致命。金太郎、酒吞童子激戰之地。 | [petrified_grassland.jpg](assets/scenes/SC-013/petrified_grassland.jpg) |
+| SC-014 | 石化樹海 | 主場景 |  | 卷二第十六章 | 終年被石化樹海與高能量磁場籠罩的孤島。漫山遍野死寂灰白的石柱；金太郎在此以啃食樹皮維生。伊甸小隊首次任務目的地。 | [petrified_forest_interior.jpg](assets/scenes/SC-014/petrified_forest_interior.jpg) |
+| SC-014-V01 | 石化樹海·空中俯瞰 | 變體 | SC-014 | 卷二第十六章 | 石化樹海的空中鳥瞰：無垠的灰白石柱林綿延至地平線，遠處火山冒煙。 | [petrified_forest_aerial.jpg](assets/scenes/SC-014-V01/petrified_forest_aerial.jpg) |
