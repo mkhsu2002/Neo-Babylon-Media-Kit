@@ -40,6 +40,7 @@
   .badge{position:absolute;left:8px;top:8px;font-size:12px;padding:3px 10px;border-radius:20px;
     background:rgba(94,234,212,.15);color:var(--accent);border:1px solid rgba(94,234,212,.4)}
   .badge.scene{background:rgba(125,211,252,.15);color:var(--accent2);border-color:rgba(125,211,252,.4)}
+  .badge.mecha{background:rgba(251,191,36,.15);color:#fbbf24;border-color:rgba(251,191,36,.4)}
   .info{padding:14px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
   .info h3{font-size:17px}
   .info .names{font-size:13px;color:var(--muted)}
@@ -78,6 +79,7 @@
     <button data-t="all" class="active" onclick="setTab('all')">全部</button>
     <button data-t="char" onclick="setTab('char')">角色</button>
     <button data-t="scene" onclick="setTab('scene')">場景</button>
+    <button data-t="mecha" onclick="setTab('mecha')">機甲</button>
   </div>
 </div>
 <div class="count" id="count"></div>
@@ -99,12 +101,13 @@
 </footer>
 
 <script>
-let DB = {char:[], scene:[]};
+let DB = {char:[], scene:[], mecha:[]};
 let tab = 'all', kw = '';
 let lbList = [], lbIdx = 0;
 
 fetch('data/characters.json').then(r=>r.json()).then(d=>{DB.char=d.map(x=>({...x,_t:'char'}));render();});
 fetch('data/scenes.json').then(r=>r.json()).then(d=>{DB.scene=d.map(x=>({...x,_t:'scene'}));render();});
+fetch('data/mecha.json').then(r=>r.json()).then(d=>{DB.mecha=d.map(x=>({...x,_t:'mecha'}));render();});
 
 function setTab(t){tab=t;document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.t===t));render();}
 function doSearch(){kw=document.getElementById('q').value.trim().toLowerCase();render();}
@@ -119,17 +122,19 @@ function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replac
 
 function render(){
   const grid=document.getElementById('grid');
-  let items=[...DB.char,...DB.scene];
+  let items=[...DB.char,...DB.scene,...DB.mecha];
   if(tab==='char') items=DB.char;
   if(tab==='scene') items=DB.scene;
+  if(tab==='mecha') items=DB.mecha;
   items=items.filter(match);
-  document.getElementById('count').textContent=`共 ${items.length} 筆（角色 ${DB.char.filter(match).length} · 場景 ${DB.scene.filter(match).length}）`;
+  document.getElementById('count').textContent=`共 ${items.length} 筆（角色 ${DB.char.filter(match).length} · 場景 ${DB.scene.filter(match).length} · 機甲 ${DB.mecha.filter(match).length}）`;
   grid.innerHTML=items.map((x,i)=>{
-    const isC=x._t==='char';
+    const badgeT=x._t==='char'?'角色':(x._t==='mecha'?'機甲':'場景');
+    const badgeC=x._t==='char'?'':(x._t==='mecha'?' mecha':' scene');
     const sub=[x.name_en,x.name_jp].filter(Boolean).join(' · ');
     const thumbs=x.images.slice(0,1).map(p=>
       `<div class="thumb" onclick='openLb(${JSON.stringify(x.images)},0,${JSON.stringify(x.name_zh)})'>
-         <span class="badge${isC?'':' scene'}">${isC?'角色':'場景'}</span>
+         <span class="badge${badgeC}">${badgeT}</span>
          <img src="${p}" alt="${esc(x.name_zh)}" loading="lazy">
          ${x.images.length>1?`<span class="more">+${x.images.length-1}</span>`:''}
        </div>`).join('');

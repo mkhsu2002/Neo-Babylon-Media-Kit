@@ -29,10 +29,12 @@
 |---|---|
 | `characters.md` | 角色列表（含中／英／日譯名、出處、描述、參考圖連結） |
 | `scenes.md` | 場景列表（同上） |
+| `mecha.md` | 機甲列表（含中／英／日譯名、出處、描述、參考圖連結） |
 | `index.html` | 網頁瀏覽器：搜尋、分類瀏覽、放大檢視、下載（可用瀏覽器直接開啟，或部署至 GitHub Pages） |
-| `data/characters.json`、`data/scenes.json` | 機器可讀的角色／場景資料（含 repo 內圖片相對路徑） |
+| `data/characters.json`、`data/scenes.json`、`data/mecha.json` | 機器可讀的角色／場景／機甲資料（含 repo 內圖片相對路徑） |
 | `assets/characters/<角色ID>/` | 各角色視覺參考圖 |
 | `assets/scenes/<場景ID>/` | 各場景視覺參考圖 |
+| `assets/mecha/<機甲ID>/` | 各機甲視覺參考圖 |
 
 譯名欄位留空者表示官方尚未公布，請勿自行翻譯使用。
 
