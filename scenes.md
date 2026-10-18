@@ -11,3 +11,17 @@
 | 荒廢人類城市／真菌覆蓋 | — | — | 《香火》SH05B | 數百年後人類都市；建築與高架橋被巨大綠色真菌、菌絲及菌傘覆蓋，無直升機 | [SH05B_ABANDONED_FUNGAL_CITY_APPROVED_V01.png](assets/scenes/SC-005/SH05B_ABANDONED_FUNGAL_CITY_APPROVED_V01.jpg) |
 | 四大機甲凌空 | — | — | 《香火》SH09 | 四機甲位於宙斯盾之外高空；青綠、赤紅、金黑、紫色，需保持既有設計 | [SH09_FOUR_MECHA_SKY_APPROVED_V02.png](assets/scenes/SC-006/SH09_FOUR_MECHA_SKY_APPROVED_V02.jpg) |
 | 深海神龍影 | — | — | 《香火》SH10 | 極深海幽暗場景，神龍本體沉沒於黑暗中，只露琥珀色雙眼 | [SH10_DEEP_SEA_DRAGON_EYES_APPROVED_V01.png](assets/scenes/SC-007/SH10_DEEP_SEA_DRAGON_EYES_APPROVED_V01.jpg) |
+
+## 新增場景（含變體／子場景）
+
+| 場景ID | 中文名 | 英文譯名 | 日文譯名 | 類型 | 父場景 | 出處 | 中文描述 | 參考圖 |
+|---|---|---|---|---|---|---|---|---|
+| SC-008 | 灣區城 |  |  | 主場景 |  | 官網概念圖 | AI紀元1126年的未來濱海城市，陶比的故鄉。北方矗立高聳入雲的始祖智能塔；西區住宅參照22世紀北美社區風格，整潔高效的AI烏托邦。 | [bay_city_1.jpg](assets/scenes/SC-008/bay_city_1.jpg)<br>[bay_city_2.jpg](assets/scenes/SC-008/bay_city_2.jpg) |
+| SC-008-V01 | 灣區城·夜間 |  |  | 變體 | SC-008 | 官網概念圖 | 灣區城的夜間樣貌。 | [bay_city_night.jpg](assets/scenes/SC-008-V01/bay_city_night.jpg) |
+| SC-009 | 伊甸 |  |  | 主場景 |  | 官網概念圖 | 位於古夏威夷火山深處的巨大地下基地，由香火程式碼歷時千餘年暗中興建。包含StarGate巨型算力場、祝融能量槽、可容納數千人的居住空間及巨聖獸格納庫。 | [eden_1.jpg](assets/scenes/SC-009/eden_1.jpg)<br>[eden_2.jpg](assets/scenes/SC-009/eden_2.jpg) |
+| SC-009-S01 | 伊甸控制室 |  |  | 子場景 | SC-009 | 官網概念圖 | 伊甸基地深處的控制聖域，幽藍色資料流閃爍的算力中樞。 | [eden_control_1.jpg](assets/scenes/SC-009-S01/eden_control_1.jpg)<br>[eden_control_2.jpg](assets/scenes/SC-009-S01/eden_control_2.jpg) |
+| SC-009-S02 | 伊甸村 |  |  | 子場景 | SC-009 | 官網概念圖 | 伊甸地表的生態村落，透過天頂生態模擬系統投射晝夜，有鵝卵石小徑、仿生植物、人工湖泊與瀑布。 | [eden_village.jpg](assets/scenes/SC-009-S02/eden_village.jpg) |
+| SC-010 | 生態博物館 |  |  | 主場景 |  | 官網概念圖 | 外觀如星艦又如諾亞方舟，矗立於綠地中央。內部為巨大的數據長廊，收藏地球古今逾億種生物的數位樣本。 | [eco_museum.jpg](assets/scenes/SC-010/eco_museum.jpg) |
+| SC-011 | 實驗中學 |  |  | 主場景 |  | 官網概念圖 | 灣區城實驗中學，融合傳統日式建築與未來科技：古樸木質廊道與冷峻合金牆面交織，枯山水庭園旁藏有能量導管，設有飛行載具起降場。 | [school_campus.jpg](assets/scenes/SC-011/school_campus.jpg)<br>[school_day.jpg](assets/scenes/SC-011/school_day.jpg) |
+| SC-011-V01 | 實驗中學·櫻花校園 |  |  | 變體 | SC-011 | 官網概念圖 | 櫻花盛開時節的實驗中學校園，櫻花樹遍佈校園每個角落。 | [school_cherry.jpg](assets/scenes/SC-011-V01/school_cherry.jpg) |
+| SC-012 | 宙斯盾 |  |  | 主場景 |  | 官網概念圖 | 籠罩新巴比倫上空的半球狀高能電磁場結界，方圓100公里，看似透明卻堅不可摧。官網亦稱「宇宙盾」。 | [aegis.jpg](assets/scenes/SC-012/aegis.jpg) |
