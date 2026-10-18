@@ -133,5 +133,17 @@
       "assets/characters/NB-C073/fang_young_main.jpg",
       "assets/characters/NB-C073/fang_young_hunter.jpg"
     ]
+  },
+  {
+    "id": "NB-C074",
+    "name_zh": "K（鄭可爽）",
+    "name_en": "",
+    "name_jp": "",
+    "source": "前傳",
+    "desc": "K（本名鄭可爽），前傳男主角。鄭關山博士之孫、積電城原生居民，T-ONE狩獵小隊成員。幼年島嶼實驗基地失控、父母雙亡、自己重傷，爺爺以奈米仿生技術救活成為cyborg。受命暗中保護方辰星，為救她被犬王撕斷左臂；新手臂整合鐵甲豬王DNA可「鐵甲晶化」。被選為「盤古」駕駛員，初次同步率達百分之百。",
+    "images": [
+      "assets/characters/NB-C074/k_tactical.jpg"
+    ],
+    "parent": ""
   }
 ]

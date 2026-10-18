@@ -18,3 +18,4 @@
 | 拉斐爾 |  |  | 正文出場 | 實驗中學導師，仿生代 AI。受香火引導救出亞當、夏娃，帶正太、夏綠蒂抵達伊甸；升級後成為基地總調度官，後世與亞當、夏娃並稱三聖。 | [raphael_ref.jpg](assets/characters/NB-C004/raphael_ref.jpg) |
 | 方辰星（艦長版） |  |  | 往事中出場 | 人類女博士，又稱聖母、AI 之母。主持星移計畫並帶方舟遠離地球，攜走終極權杖，施作靜域結界與 AI 核心／晶片能力封印。 | [fang_captain.jpg](assets/characters/NB-C016/fang_captain.jpg) |
 | 方辰星（年輕版） |  |  | 往事中出場 | 方辰星年輕時期版本。主視覺為灰色連帽衫配針織背心便服，另有狩獵裝扮。 | [fang_young_main.jpg](assets/characters/NB-C073/fang_young_main.jpg) [fang_young_hunter.jpg](assets/characters/NB-C073/fang_young_hunter.jpg) |
+| K（鄭可爽） |  |  | 前傳 | K（本名鄭可爽），前傳男主角。鄭關山博士之孫、積電城原生居民，T-ONE狩獵小隊成員。幼年島嶼實驗基地失控、父母雙亡、自己重傷，爺爺以奈米仿生技術救活成為cyborg。受命暗中保護方辰星，為救她被犬王撕斷左臂；新手臂整合鐵甲豬王DNA可「鐵甲晶化」。被選為「盤古」駕駛員，初次同步率達百分之百。 | ![K](assets/characters/NB-C074/k_tactical.jpg) |
