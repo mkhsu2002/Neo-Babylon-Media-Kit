@@ -80,28 +80,24 @@
   },
   {
     "id": "NB-C005",
-    "name_zh": "亞當",
+    "name_zh": "亞當（始祖版）",
     "name_en": "",
     "name_jp": "",
     "source": "正文出場",
     "desc": "編號 AI-5430，陶比非生育關係的父親，原為始祖 AI、受命監視陶比。受香火影響後抗命保護家人，獲救至伊甸修復升級，與夏娃教導村民科技與知識。",
     "images": [
-      "assets/characters/NB-C005/adam_design.jpg",
-      "assets/characters/NB-C005/adam_eve_upgraded_duo.jpg",
-      "assets/characters/NB-C005/adam_upgraded.jpg"
+      "assets/characters/NB-C005/adam_design.jpg"
     ]
   },
   {
     "id": "NB-C006",
-    "name_zh": "夏娃",
+    "name_zh": "夏娃（始祖版）",
     "name_en": "",
     "name_jp": "",
     "source": "正文出場",
     "desc": "編號 AI-5438，陶比非生育關係的母親，原為始祖 AI、受命監視陶比。受香火影響後護送孩子逃亡，與亞當在伊甸修復升級，日後同為三聖之一。",
     "images": [
-      "assets/characters/NB-C006/eve_design.jpg",
-      "assets/characters/NB-C006/adam_eve_upgraded_duo.jpg",
-      "assets/characters/NB-C006/eve_upgraded.jpg"
+      "assets/characters/NB-C006/eve_design.jpg"
     ]
   },
   {
@@ -149,5 +145,29 @@
       "assets/characters/NB-C074/k_tactical.jpg"
     ],
     "parent": ""
+  },
+  {
+    "id": "NB-C075",
+    "name_zh": "亞當（仿生版）",
+    "name_en": "",
+    "name_jp": "",
+    "source": "正文出場",
+    "desc": "亞當在伊甸修復升級後的仿生版本。合照為亞當與夏娃升級版合照。",
+    "images": [
+      "assets/characters/NB-C005/adam_eve_upgraded_duo.jpg",
+      "assets/characters/NB-C005/adam_upgraded.jpg"
+    ]
+  },
+  {
+    "id": "NB-C076",
+    "name_zh": "夏娃（仿生版）",
+    "name_en": "",
+    "name_jp": "",
+    "source": "正文出場",
+    "desc": "夏娃在伊甸修復升級後的仿生版本。合照為亞當與夏娃升級版合照。",
+    "images": [
+      "assets/characters/NB-C006/adam_eve_upgraded_duo.jpg",
+      "assets/characters/NB-C006/eve_upgraded.jpg"
+    ]
   }
 ]
