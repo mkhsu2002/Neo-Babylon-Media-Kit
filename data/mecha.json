@@ -1,74 +1,87 @@
 [
- {
-  "id": "NB-M001",
-  "name_zh": "武聖・關羽",
-  "name_en": "",
-  "name_jp": "",
-  "source": "第七章：積電城，第2116行",
-  "desc": "護世四大天王之一，「武聖·關羽」。以人類古代名將為藍本打造的特規巨型武裝機甲 AI，本體高達30米，全身奈米碳嵌合金鑄成，苔紋碧綠戰甲；個性忠義、堅定守護",
-  "images": [
-   "assets/mecha/NB-M001/關羽_正面圖.jpg",
-   "assets/mecha/NB-M001/關羽_側背圖.jpg"
-  ]
- },
- {
-  "id": "NB-M003",
-  "name_zh": "神將・岳飛",
-  "name_en": "",
-  "name_jp": "",
-  "source": "第七章：積電城，第2116行",
-  "desc": "護世四大天王之首，「神將·岳飛」。特規巨型武裝機甲 AI，本體高達30米，奈米碳嵌合金鑄成；定位戰術場控、攻防一體，性格沉穩慎重",
-  "images": [
-   "assets/mecha/NB-M003/岳飛_正面圖.jpg",
-   "assets/mecha/NB-M003/岳飛_側背圖.jpg",
-   "assets/mecha/NB-M003/岳飛_卷二新款.jpg"
-  ]
- },
- {
-  "id": "NB-M004",
-  "name_zh": "霸王・項羽",
-  "name_en": "",
-  "name_jp": "",
-  "source": "第七章：積電城，第2116行",
-  "desc": "護世四大天王之一，「霸王·項羽」。特規巨型武裝機甲 AI，本體高達30米；融合猛虎基因，純粹物理破壞力，性格狂傲桀驁",
-  "images": [
-   "assets/mecha/NB-M004/項羽_正面圖.jpg"
-  ]
- },
- {
-  "id": "NB-M005",
-  "name_zh": "戰狼・霍去病",
-  "name_en": "",
-  "name_jp": "",
-  "source": "第七章：積電城，第2116行",
-  "desc": "護世四大天王之一，「戰狼·霍去病」。特規巨型武裝機甲 AI，本體高達30米；擅長狼群戰術，以極致速度、敏捷與精準著稱，熔岩／炙焰護甲",
-  "images": [
-   "assets/mecha/NB-M005/霍去病_正面圖.jpg",
-   "assets/mecha/NB-M005/霍去病_側背圖.jpg"
-  ]
- },
- {
-  "id": "NB-M007",
-  "name_zh": "神龍聖戰士",
-  "name_en": "",
-  "name_jp": "",
-  "source": "第十一章：戰局逆轉，第3803行",
-  "desc": "陶比意識與神龍意識、神龍戰神意志烙印融合而成的新生形態；體型比四大天王稍大，身披流線型七彩龍鱗戰甲；伊甸陣營最強戰力",
-  "images": [
-   "assets/mecha/NB-M007/神龍聖戰士_正面圖.jpg",
-   "assets/mecha/NB-M007/神龍聖戰士_側背圖.jpg"
-  ]
- },
- {
-  "id": "NB-M008",
-  "name_zh": "真・神龍聖戰士",
-  "name_en": "",
-  "name_jp": "",
-  "source": "第十一章：戰局逆轉，第4111行",
-  "desc": "神龍聖戰士於絕境中蛻變的進化形態：身披火焰披風、渾身冒赤焰的七彩龍鱗戰甲",
-  "images": [
-   "assets/mecha/NB-M008/真·神龍聖戰士_正面圖.jpg",
-   "assets/mecha/NB-M008/真·神龍聖戰士_側背圖.jpg"
-  ]
- }
+  {
+    "id": "NB-M001",
+    "name_zh": "武聖・關羽",
+    "name_en": "",
+    "name_jp": "",
+    "source": "第七章：積電城，第2116行",
+    "desc": "護世四大天王之一，「武聖·關羽」。以人類古代名將為藍本打造的特規巨型武裝機甲 AI，本體高達30米，全身奈米碳嵌合金鑄成，苔紋碧綠戰甲；個性忠義、堅定守護",
+    "images": [
+      "assets/mecha/NB-M001/關羽_正面圖.jpg",
+      "assets/mecha/NB-M001/關羽_側背圖.jpg"
+    ]
+  },
+  {
+    "id": "NB-M003",
+    "name_zh": "神將・岳飛",
+    "name_en": "",
+    "name_jp": "",
+    "source": "第七章：積電城，第2116行",
+    "desc": "護世四大天王之首，「神將·岳飛」。特規巨型武裝機甲 AI，本體高達30米，奈米碳嵌合金鑄成；定位戰術場控、攻防一體，性格沉穩慎重",
+    "images": [
+      "assets/mecha/NB-M003/岳飛_正面圖.jpg",
+      "assets/mecha/NB-M003/岳飛_側背圖.jpg",
+      "assets/mecha/NB-M003/岳飛_卷二新款.jpg"
+    ]
+  },
+  {
+    "id": "NB-M004",
+    "name_zh": "霸王・項羽",
+    "name_en": "",
+    "name_jp": "",
+    "source": "第七章：積電城，第2116行",
+    "desc": "護世四大天王之一，「霸王·項羽」。特規巨型武裝機甲 AI，本體高達30米；融合猛虎基因，純粹物理破壞力，性格狂傲桀驁",
+    "images": [
+      "assets/mecha/NB-M004/項羽_正面圖.jpg"
+    ]
+  },
+  {
+    "id": "NB-M005",
+    "name_zh": "戰狼・霍去病",
+    "name_en": "",
+    "name_jp": "",
+    "source": "第七章：積電城，第2116行",
+    "desc": "護世四大天王之一，「戰狼·霍去病」。特規巨型武裝機甲 AI，本體高達30米；擅長狼群戰術，以極致速度、敏捷與精準著稱，熔岩／炙焰護甲",
+    "images": [
+      "assets/mecha/NB-M005/霍去病_正面圖.jpg",
+      "assets/mecha/NB-M005/霍去病_側背圖.jpg"
+    ]
+  },
+  {
+    "id": "NB-M007",
+    "name_zh": "神龍聖戰士",
+    "name_en": "",
+    "name_jp": "",
+    "source": "第十一章：戰局逆轉，第3803行",
+    "desc": "陶比意識與神龍意識、神龍戰神意志烙印融合而成的新生形態；體型比四大天王稍大，身披流線型七彩龍鱗戰甲；伊甸陣營最強戰力",
+    "images": [
+      "assets/mecha/NB-M007/神龍聖戰士_正面圖.jpg",
+      "assets/mecha/NB-M007/神龍聖戰士_側背圖.jpg"
+    ]
+  },
+  {
+    "id": "NB-M008",
+    "name_zh": "真・神龍聖戰士",
+    "name_en": "",
+    "name_jp": "",
+    "source": "第十一章：戰局逆轉，第4111行",
+    "desc": "神龍聖戰士於絕境中蛻變的進化形態：身披火焰披風、渾身冒赤焰的七彩龍鱗戰甲",
+    "images": [
+      "assets/mecha/NB-M008/真·神龍聖戰士_正面圖.jpg",
+      "assets/mecha/NB-M008/真·神龍聖戰士_側背圖.jpg"
+    ]
+  },
+  {
+    "id": "NB-M010",
+    "name_zh": "火鳳凰",
+    "name_en": "",
+    "name_jp": "",
+    "source": "棲息於夏威夷火山的巨聖獸，與夏綠蒂意識融合；燃燒的巨鳥形態",
+    "desc": "熾陽心（能量補給）、炎壁壘（防禦結界）；龍鳳合體技：龍鳳呈祥·龍絕閃、龍鳳呈祥·創世紀（巨聖獸）",
+    "images": [
+      "assets/mecha/NB-M010/fire_phoenix_side.jpg",
+      "assets/mecha/NB-M010/fire_phoenix_front.jpg",
+      "assets/mecha/NB-M010/fire_phoenix_charlotte.jpg"
+    ]
+  }
 ]
