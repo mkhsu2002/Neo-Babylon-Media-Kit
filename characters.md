@@ -13,8 +13,8 @@
 
 ## 用戶提供設計圖
 
-| 亞當 |  |  | 正文出場 | 編號 AI-5430，陶比非生育關係的父親，原為始祖 AI、受命監視陶比。受香火影響後抗命保護家人，獲救至伊甸修復升級，與夏娃教導村民科技與知識。 | [adam_design.jpg](assets/characters/NB-C005/adam_design.jpg) |
-| 夏娃 |  |  | 正文出場 | 編號 AI-5438，陶比非生育關係的母親，原為始祖 AI、受命監視陶比。受香火影響後護送孩子逃亡，與亞當在伊甸修復升級，日後同為三聖之一。 | [eve_design.jpg](assets/characters/NB-C006/eve_design.jpg) |
+| 亞當 |  |  | 正文出場 | 編號 AI-5430，陶比非生育關係的父親，原為始祖 AI、受命監視陶比。受香火影響後抗命保護家人，獲救至伊甸修復升級，與夏娃教導村民科技與知識。 | [adam_design.jpg](assets/characters/NB-C005/adam_design.jpg)<br>[adam_eve_upgraded_duo.jpg](assets/characters/NB-C005/adam_eve_upgraded_duo.jpg)<br>[adam_upgraded.jpg](assets/characters/NB-C005/adam_upgraded.jpg) |
+| 夏娃 |  |  | 正文出場 | 編號 AI-5438，陶比非生育關係的母親，原為始祖 AI、受命監視陶比。受香火影響後護送孩子逃亡，與亞當在伊甸修復升級，日後同為三聖之一。 | [eve_design.jpg](assets/characters/NB-C006/eve_design.jpg)<br>[adam_eve_upgraded_duo.jpg](assets/characters/NB-C006/adam_eve_upgraded_duo.jpg)<br>[eve_upgraded.jpg](assets/characters/NB-C006/eve_upgraded.jpg) |
 | 拉斐爾 |  |  | 正文出場 | 實驗中學導師，仿生代 AI。受香火引導救出亞當、夏娃，帶正太、夏綠蒂抵達伊甸；升級後成為基地總調度官，後世與亞當、夏娃並稱三聖。 | [raphael_ref.jpg](assets/characters/NB-C004/raphael_ref.jpg) |
 | 方辰星（艦長版） |  |  | 往事中出場 | 人類女博士，又稱聖母、AI 之母。主持星移計畫並帶方舟遠離地球，攜走終極權杖，施作靜域結界與 AI 核心／晶片能力封印。 | [fang_captain.jpg](assets/characters/NB-C016/fang_captain.jpg) |
 | 方辰星（年輕版） |  |  | 往事中出場 | 方辰星年輕時期版本。主視覺為灰色連帽衫配針織背心便服，另有狩獵裝扮。 | [fang_young_main.jpg](assets/characters/NB-C073/fang_young_main.jpg) [fang_young_hunter.jpg](assets/characters/NB-C073/fang_young_hunter.jpg) |

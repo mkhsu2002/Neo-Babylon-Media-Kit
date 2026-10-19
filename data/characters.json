@@ -86,7 +86,9 @@
     "source": "正文出場",
     "desc": "編號 AI-5430，陶比非生育關係的父親，原為始祖 AI、受命監視陶比。受香火影響後抗命保護家人，獲救至伊甸修復升級，與夏娃教導村民科技與知識。",
     "images": [
-      "assets/characters/NB-C005/adam_design.jpg"
+      "assets/characters/NB-C005/adam_design.jpg",
+      "assets/characters/NB-C005/adam_eve_upgraded_duo.jpg",
+      "assets/characters/NB-C005/adam_upgraded.jpg"
     ]
   },
   {
@@ -97,7 +99,9 @@
     "source": "正文出場",
     "desc": "編號 AI-5438，陶比非生育關係的母親，原為始祖 AI、受命監視陶比。受香火影響後護送孩子逃亡，與亞當在伊甸修復升級，日後同為三聖之一。",
     "images": [
-      "assets/characters/NB-C006/eve_design.jpg"
+      "assets/characters/NB-C006/eve_design.jpg",
+      "assets/characters/NB-C006/adam_eve_upgraded_duo.jpg",
+      "assets/characters/NB-C006/eve_upgraded.jpg"
     ]
   },
   {

@@ -21,6 +21,7 @@
 | SC-009 | 伊甸 |  |  | 主場景 |  | 官網概念圖 | 位於古夏威夷火山深處的巨大地下基地，由香火程式碼歷時千餘年暗中興建。包含StarGate巨型算力場、祝融能量槽、可容納數千人的居住空間及巨聖獸格納庫。 | [eden_1.jpg](assets/scenes/SC-009/eden_1.jpg)<br>[eden_2.jpg](assets/scenes/SC-009/eden_2.jpg) |
 | SC-009-S01 | 伊甸控制室 |  |  | 子場景 | SC-009 | 官網概念圖 | 伊甸基地深處的控制聖域，幽藍色資料流閃爍的算力中樞。 | [eden_control_1.jpg](assets/scenes/SC-009-S01/eden_control_1.jpg)<br>[eden_control_2.jpg](assets/scenes/SC-009-S01/eden_control_2.jpg) |
 | SC-009-S02 | 伊甸村 |  |  | 子場景 | SC-009 | 官網概念圖 | 伊甸地表的生態村落，透過天頂生態模擬系統投射晝夜，有鵝卵石小徑、仿生植物、人工湖泊與瀑布。 | [eden_village.jpg](assets/scenes/SC-009-S02/eden_village.jpg) |
+| SC-009-S03 | 火山口下伊甸基地 |  |  | 子場景 | SC-009 | 用戶提供參考圖 | 伊甸基地，位於火山口下方的熔岩洞穴中，高科技設施與藍色全息指揮系統 | [eden_volcano_base.jpg](assets/scenes/SC-009-S03/eden_volcano_base.jpg) |
 | SC-010 | 生態博物館 |  |  | 主場景 |  | 官網概念圖 | 外觀如星艦又如諾亞方舟，矗立於綠地中央。內部為巨大的數據長廊，收藏地球古今逾億種生物的數位樣本。 | [eco_museum.jpg](assets/scenes/SC-010/eco_museum.jpg) |
 | SC-011 | 實驗中學 |  |  | 主場景 |  | 官網概念圖 | 灣區城實驗中學，融合傳統日式建築與未來科技：古樸木質廊道與冷峻合金牆面交織，枯山水庭園旁藏有能量導管，設有飛行載具起降場。 | [school_campus.jpg](assets/scenes/SC-011/school_campus.jpg)<br>[school_day.jpg](assets/scenes/SC-011/school_day.jpg) |
 | SC-011-V01 | 實驗中學·櫻花校園 |  |  | 變體 | SC-011 | 官網概念圖 | 櫻花盛開時節的實驗中學校園，櫻花樹遍佈校園每個角落。 | [school_cherry.jpg](assets/scenes/SC-011-V01/school_cherry.jpg) |
