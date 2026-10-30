@@ -302,6 +302,19 @@
     "stype": "子場景"
   },
   {
+    "id": "SC-015-V01",
+    "name_zh": "雲滬城冬雪景",
+    "name_en": "",
+    "name_jp": "",
+    "source": "卷二契子",
+    "desc": "雲滬城冬日雪景：整城覆雪，雪花紛飛",
+    "images": [
+      "assets/scenes/SC-015/yunhu_city_snow_16x9.jpg"
+    ],
+    "parent": "SC-015",
+    "stype": "變體"
+  },
+  {
     "id": "SC-008-S01",
     "name_zh": "灣區城·中央尖塔廣場",
     "name_en": "",

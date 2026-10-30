@@ -42,6 +42,7 @@
 | SC-015 | 雲滬城 | 主場景 |  | 卷二契子 | 原為上海，現為AI-07統轄的邊緣大城。整座城市如巨大金屬島嶼懸浮於高空，上空覆蓋琉璃色透明穹頂；城內按大唐盛世復刻：飛簷翹角重閣樓台、紅木八角燈籠、仿真蓮花紋地磚；穹頂之下是翻滾雲海，透過雲縫可見下方被摧殘的死寂焦土。 | [yunhu_city.jpg](assets/scenes/SC-015/yunhu_city.jpg) |
 | SC-015-S01 | 黃鶴樓 | 子場景 | SC-015 | 卷二契子 | 雲滬城內的智能塔，唐風重檐與未來科技融合。 | [yellow_crane_tower.jpg](assets/scenes/SC-015-S01/yellow_crane_tower.jpg) |
 | SC-015-S02 | 天外天 | 子場景 | SC-015 | 卷二契子 | 雲滬城內的古風酒場，位於高塔頂層平台。 | [tianwaitian.jpg](assets/scenes/SC-015-S02/tianwaitian.jpg) |
+| SC-015-V01 | 雲滬城冬雪景 | 變體 | SC-015 | 卷二契子 | 雲滬城冬日雪景：整城覆雪，雪花紛飛 | [yunhu_city_snow_16x9.jpg](assets/scenes/SC-015/yunhu_city_snow_16x9.jpg) |
 | SC-008-S01 | 灣區城·中央尖塔廣場 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_central_spire.jpg](assets/scenes/SC-008-S01/bay_central_spire.jpg) |
 | SC-008-S02 | 灣區城·空中俯瞰 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_aerial.jpg](assets/scenes/SC-008-S02/bay_aerial.jpg) |
 | SC-008-S03 | 灣區城·港灣碼頭 | 子場景 | SC-008 | 用戶提供參考圖 | 灣區城內場所寫實概念（用戶提供參考圖，細節待確認）。 | [bay_harbor.jpg](assets/scenes/SC-008-S03/bay_harbor.jpg) |
