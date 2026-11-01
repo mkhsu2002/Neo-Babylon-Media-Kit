@@ -16,3 +16,5 @@
 | 中文名 | 英文譯名 | 日文譯名 | 出處 | 中文描述 | 參考圖 |
 |---|---|---|---|---|---|
 | 火鳳凰 |  |  | 棲息於夏威夷火山的巨聖獸，與夏綠蒂意識融合；燃燒的巨鳥形態 | 熾陽心（能量補給）、炎壁壘（防禦結界）；龍鳳合體技：龍鳳呈祥·龍絕閃、龍鳳呈祥·創世紀（巨聖獸） | [fire_phoenix_side.jpg](assets/mecha/NB-M010/fire_phoenix_side.jpg)<br>[fire_phoenix_front.jpg](assets/mecha/NB-M010/fire_phoenix_front.jpg)<br>[fire_phoenix_charlotte.jpg](assets/mecha/NB-M010/fire_phoenix_charlotte.jpg) |
+| 左犬 |  |  | 第十八章：左右 | 正太的巨聖獸。中式傳統石獅外觀，頭顱渾圓雄闊、額骨高隆、圓眼微凸、闊鼻短吻，翻湧盤繞的石紋自雙頰延至寬厚胸膛；甦醒後身高15公尺、長25公尺，軀體覆蓋白色雲母石材質裝甲，紋路沿四肢與背脊延伸、隨呼吸流動微光；眼瞳泛銀色光芒 | [NB-M023_ZUOQUAN_FRONT_V01.jpg](assets/mecha/NB-M023/NB-M023_ZUOQUAN_FRONT_V01.jpg)<br>[NB-M023_ZUOQUAN_YOUQUAN_PAIR_V01.jpg](assets/mecha/NB-M023/NB-M023_ZUOQUAN_YOUQUAN_PAIR_V01.jpg) |
+| 右犬 |  |  | 第十八章：左右 | 正太的巨聖獸。古日本神社狛犬外觀，體態較柔順，頸側石紋如火焰般向後舒展，神情肅穆；甦醒後身高15公尺、長25公尺，白色雲母石材質裝甲；眼瞳散發柔和金色光輝 | [NB-M024_YOUQUAN_FRONT_V01.jpg](assets/mecha/NB-M024/NB-M024_YOUQUAN_FRONT_V01.jpg)<br>[NB-M024_ZUOQUAN_YOUQUAN_PAIR_V01.jpg](assets/mecha/NB-M024/NB-M024_ZUOQUAN_YOUQUAN_PAIR_V01.jpg) |
